@@ -3,7 +3,8 @@
 import axios from 'axios'
 import ApiHelpers from './ApiHelpers'
 
-const BASE_URL = "http://localhost:8000/favoright"
+// const BASE_URL = "http://localhost:8000/favoright"
+const BASE_URL = "https://favoright-fontend-heroku.herokuapp.com/"
 
 
 const FavorightAPI = {}

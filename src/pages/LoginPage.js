@@ -23,12 +23,14 @@ function LoginPage(props) {
     
 
         const data = await FavorightAPI.login(loginData)
-       
+        
+
         if (data){
-         
+            console.log(data.token)
             props.setUserName(data.username)
             localStorage.setItem('user', loginData.username)
             localStorage.setItem('userID', data.userID)
+            localStorage.setItem('token', data.token)
             props.setUserID(data.userID)
             props.setUserCookie(Cookies.get("csrftoken"))
 

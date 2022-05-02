@@ -18,6 +18,7 @@ function NavBar (props){
             props.setUserCookie("")
             props.setUserName("")
             props.setUserID("")
+            localStorage.clear()
             
             navigate('/')
           

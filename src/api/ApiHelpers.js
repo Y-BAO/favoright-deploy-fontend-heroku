@@ -6,9 +6,13 @@ const ApiHelpers = {}
 
 ApiHelpers.getCsrfConfig = () => {
     return {
-        withCredentials:true,
+        // withCredentials:true,
+        // headers:{
+        //     "X-CSRFToken":Cookie.get("csrftoken")
+        // }
+
         headers:{
-            "X-CSRFToken":Cookie.get("csrftoken")
+            "Authorization":`Bearer ${localStorage.getItem('token')}`
         }
     }
 }

@@ -1,0 +1,393 @@
+#body{
+
+text-align: center;
+ 
+font-family:monospace;
+height: 100vh;
+
+
+}
+
+
+.App {
+ 
+ background-color: rgb(147, 222, 230);
+
+}
+
+img{
+  opacity: 0.6;
+}
+
+ /* ======================================================================= */
+ /* login page */
+
+#login-page{
+  height: 100vh;
+}
+
+
+/* ====================================================== */
+#signup-page{
+  height: 100vh;
+}
+
+ /* ====================================================== */
+ 
+#checkLogin{
+  margin-top: 100px;
+  height: 100vh;
+  overflow:auto;
+  
+}
+
+#background-image{
+  height: 500px;
+  background-image: url(https://cdn.boldomatic.com/content/post/CFT1dg/Can-you-do-me-a-favor?size=200);
+  overflow: hidden;
+  opacity: 0.1;
+}
+
+/* ================================================================ */
+/* store nearby */
+#storeNearBy{
+
+ background-image:linear-gradient(to right, rgb(84, 244, 244), rgb(16, 108, 151));
+  display: flex;
+ padding: 10px;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+ flex-wrap: wrap;
+ margin: 100px;
+ max-height:700px;
+ overflow: auto;
+}
+ 
+
+ 
+
+ 
+
+.form{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+#welcomePage{
+  background-color: rgb(69, 238, 179);
+   
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#homepage{
+  margin-top: 350px;
+  /* margin-bottom: 100px; */
+ height: 100vh;
+ 
+
+}
+
+#navBar{
+  margin-bottom: 30px;
+}
+
+
+
+/* =================================================== */
+/* post page */
+
+#post-page-render{
+  display: flex;
+   
+  justify-content: space-between;
+  /* height: 100%; */
+  
+}
+
+#post-page-side-bar{
+  background-color: aliceblue;
+  margin: 40px 0 5px 10px  ;
+  padding: 50px;
+  width: 33%;
+  border-right:  inset black;
+}
+
+#post-page-post-detail{
+ 
+  margin: 40px 10px 5px 5px;
+  overflow:auto;
+  width: 65%;
+ overflow: auto;
+ 
+ 
+ 
+}
+
+ 
+#post-page-post-content{
+  border-bottom: inset black;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+ 
+}
+
+#storeNearByInPost{
+
+  border-top:black inset;
+ width: auto;
+  height: 500px;
+  overflow: auto;
+  object-fit: fill;
+  margin-top: 5%;
+  padding: 2%;
+
+ 
+}
+
+#carouselItem{
+  height: 500px;
+ 
+}
+ 
+
+
+/* ========================================================================== */
+/* favor me helped page */
+
+#favor-me-helped-page{
+  height: 100vh;
+  
+}
+
+#favor-me-helped-component{
+ display: flex;
+  justify-content: center;
+  margin: 20px;
+ 
+}
+
+#favor-me-helped-detail{
+  
+  background-color: rgb(193, 232, 193);
+  margin: 10px;
+}
+
+ 
+
+/* ========================================================================= */
+/* all post page */
+
+#all-post-page{
+ border: beige inset 3px;
+ border-radius: 2rem;
+ margin: 20px;
+  padding: 30px;
+  display: flex;
+ flex-direction: column;
+ height: 100vh;
+ overflow: auto;
+}
+
+
+
+
+/* #all-post-page-header{
+  background-color: rgba(214, 231, 237, 0.798);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+} */
+
+#all-post-page-detail-my-post{
+  margin: 20px;
+ border: rgb(193, 235, 231) inset 5px;
+ background-color:rgb(243, 244, 244);
+}
+
+.all-post-page-detail{
+  margin: 20px;
+  border: rgb(193, 235, 231) inset 5px;
+  background-color:rgb(243, 244, 244);
+}
+
+#post-solved{
+  background-color: rgb(123, 244, 137);
+   
+}
+
+#post-not-solved{
+  background-color: rgb(233, 194, 194);
+}
+
+
+#all-post-page-select{
+  width: 20%;
+ 
+ 
+}
+
+
+/* ============================== */
+/* Footer */
+
+#Footer{
+ 
+ 
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(119, 231, 231), rgb(26, 141, 195));
+ margin-top: 50px;
+  text-align: center;
+  height: 200px;
+  padding: 20px;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  border-top: solid rgb(25, 168, 212) 1px;
+ 
+}
+
+#footerLeft{
+
+  width: 65%;
+  border-right: solid rgb(16, 114, 134) 1px;
+ 
+ 
+  
+  padding: 30px;
+  
+}
+
+#footerRight{
+  
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+
+#footerSelections{
+  width: 200px;
+}
+
+/* ================================================= */
+/* add post page */
+#askFavorPage{
+  margin: 0;
+  height:100vh;
+}
+
+
+
+
+/* ==================================================== */
+/* my post page */
+ 
+
+
+#my-post-page-body{
+   display: flex;
+   justify-content:space-evenly;
+   margin: 100px;
+   overflow:auto;
+   height: 100vh;
+   
+
+}
+#my-post-page-posts{
+  border: inset rgb(200, 202, 202) 4px;
+  margin: 50px;
+  padding: 10px;
+  background-color: rgb(203, 241, 247);
+  
+ 
+}
+
+
+#my-post-page-body-favor-solved{
+  width: 35%;
+  background-color: rgb(191, 237, 181);
+  border-radius: 5rem;
+  padding: 30px;
+  border: inset 5px;
+  
+  
+ 
+}
+
+#my-post-page-body-favor-not-yet-solved{
+  border-radius: 5rem;
+  border: inset 5px;
+  width: 55%;
+  background-color: rgb(255, 186, 186);
+  padding: 30px;
+}
+
+
+
+
+/* ========================================================*/
+/* my comment page */
+#my-comment-page{
+   height: 100vh;
+}
+#my-comment-page-comments{
+  
+  background-color: rgb(245, 244, 202);
+  border-radius: 3rem;
+  margin: 50px 300px
+ 
+}
+
+ 
+
+/* =========================================================== */
+/* comment detail page */
+
+#comment-detail-page{
+   height: 100vh;
+}
+
+
+/* ============================================================== */
+#editCommentPage{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+   
+}
+
+#edit-comment-component{
+  background-color: greenyellow;
+  padding: 30px;
+  border-radius: 3rem;
+  
+}
+
+#initial-chat{
+  background-color: rgb(250, 250, 170);
+  padding: 20px;
+  border-radius: 2rem;
+ 
+  justify-content: center;
+  
+}
+
+
+/* ============================================================ */
+#edit-post-page{
+  height:750px
+}

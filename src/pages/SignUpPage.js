@@ -19,6 +19,7 @@ function SignUpPage() {
         const data = await FavorightAPI.signUp(signUpData)
         console.log(data)
         if (data){
+            
             navigate("/login")
         }
     } 

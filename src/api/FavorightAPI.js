@@ -3,8 +3,8 @@
 import axios from 'axios'
 import ApiHelpers from './ApiHelpers'
 
-// const BASE_URL = "http://localhost:8000/favoright"
-const BASE_URL = "https://favoright.herokuapp.com/favoright"
+const BASE_URL = "http://localhost:8000/favoright"
+// const BASE_URL = "https://favoright.herokuapp.com/favoright"
 
 
 const FavorightAPI = {}
@@ -102,9 +102,15 @@ FavorightAPI.login = async (loginData) => {
     )
 }
 
+// FavorightAPI.signUp = async (signUpData) => {
+//     return await ApiHelpers.tryFetchCatch(
+//         () => axios.post(`${BASE_URL}/users/`, signUpData, ApiHelpers.getCsrfConfig())
+//     )
+// }
+
 FavorightAPI.signUp = async (signUpData) => {
     return await ApiHelpers.tryFetchCatch(
-        () => axios.post(`${BASE_URL}/users/`, signUpData, ApiHelpers.getCsrfConfig())
+        () => axios.post(`${BASE_URL}/users/`, signUpData)
     )
 }
 

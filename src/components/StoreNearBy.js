@@ -16,12 +16,12 @@ function StoreNearBy (props) {
     const renderYelp = () => {
         const output = []
         if (yelpData){
-            console.log(yelpData)
-            for (let i = 0; i < yelpData.businesses.length; i++){
-                const name = yelpData.businesses[i].name
-                const image = yelpData.businesses[i].image_url
-                const url = yelpData.businesses[i].url
-                const location = yelpData.businesses[i].location
+            // console.log(yelpData)
+            for (let i = 0; i < yelpData?.businesses?.length; i++){
+                const name = yelpData?.businesses[i]?.name
+                const image = yelpData?.businesses[i]?.image_url
+                const url = yelpData?.businesses[i]?.url
+                const location = yelpData?.businesses[i]?.location
           
                
                 output.push(
@@ -58,7 +58,7 @@ function StoreNearBy (props) {
             return output
         
         } else {
-            console.log("Waiting for user input!!!!!!!!")
+            // console.log("Waiting for user input!!!!!!!!")
         }
     
     }

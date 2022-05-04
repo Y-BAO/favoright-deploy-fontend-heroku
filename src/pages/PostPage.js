@@ -55,7 +55,7 @@ function PostPage (props){
         }  
         let newComments = []
 
-        console.log("CUrrent post !!!!!!!!!!!",currentPost)
+        // console.log("CUrrent post !!!!!!!!!!!",currentPost)
 
         for (const commentID of currentPost.comments){    
             let sample = await FavorightAPI.getCommentsByID(commentID)
@@ -110,10 +110,10 @@ function PostPage (props){
 
    const checkIsPaid = (post) => {
     if (post.is_paid) {
-        console.log('is paid')
+        // console.log('is paid')
         return "$$$"
     } else {
-        console.log('not paid')
+        // console.log('not paid')
         return 'not paid'
     }
 }

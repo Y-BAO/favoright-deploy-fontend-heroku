@@ -23,14 +23,14 @@ function EditCommentComponent(props) {
         if (currentCommentCreatorID == currentLoggedInUserID) {
             const data = await FavorightAPI.editCommentByID(commentID ,editedCommentData)
             if (data) {
-                console.log('comment updated successfully!!!!!!!!!')
+                // console.log('comment updated successfully!!!!!!!!!')
                 navigate('/my-comments')
             
             } else {
-                console.log("comment update failed!!!!!!!!")
+                // console.log("comment update failed!!!!!!!!")
             }
         } else {
-            console.log("you are not allowed to edit this comment !!!!!!!!!!")
+            // console.log("you are not allowed to edit this comment !!!!!!!!!!")
         }
     }
 

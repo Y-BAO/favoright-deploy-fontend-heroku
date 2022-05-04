@@ -19,12 +19,12 @@ function AddSubComment(props) {
             content: input, 
             comment: commentID
         }
-        console.log(`data sent to subcomment on comment ${commentID}`, subCommentData)
+        // console.log(`data sent to subcomment on comment ${commentID}`, subCommentData)
 
         const data = await FavorightAPI.createSubComment(subCommentData)
 
         if (data) {
-            console.log("data received from subcomment created: ", data)
+            // console.log("data received from subcomment created: ", data)
             props.updateSubcomments(data)
             document.getElementById('content').value = ''
            

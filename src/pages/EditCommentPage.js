@@ -20,10 +20,10 @@ function EditCommentPage(props) {
         const data = await FavorightAPI.getCommentsByID(commentID)
       
         if (data) {
-            console.log("found comment to be edited")
+            // console.log("found comment to be edited")
             SetEditingComment(data ? data : [])
         } else {
-            console.log("something went wrong when locaiting comment to be edited")
+            // console.log("something went wrong when locaiting comment to be edited")
         }
 
     }

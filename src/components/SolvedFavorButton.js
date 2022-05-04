@@ -43,15 +43,15 @@ function SolvedFavorButton (props) {
             const createdFavorSolvedData  = FavorightAPI.createFavorSolved(favorSolvedData)
             if (updateHelpedData && createdFavorSolvedData) {
                 
-                console.log("set helped succesffuly!!!!!!!!! !!!!!!!!!")
+                // console.log("set helped succesffuly!!!!!!!!! !!!!!!!!!")
           
                 navigate('/my-posts')
             } else {
-                console.log("set helped failed !!!!!!!!!!!")
+                // console.log("set helped failed !!!!!!!!!!!")
             }
 
         } else {
-            console.log("you are not allowed to edit this post!!!!!!!")
+            // console.log("you are not allowed to edit this post!!!!!!!")
         }
     }
 

@@ -25,12 +25,21 @@ ApiHelpers.getCsrfConfig = () => {
 ApiHelpers.tryFetchCatch = async (axiosCall) => {
     try {
         const response = await axiosCall() 
-        console.log("response data:", response.data)
-        return response.data ? response.data : {"message": "action succeed"}
+        // console.log("response data:", response.data)
+        return response?.data ? response?.data : {"message": "action succeed"}
     } catch (error) {
-        console.log("tryFetchCatch error!!!:", error.response ? error.response.data : error)
-        // window.location.href('http://localhost:3000')
-        alert('not found')
+        
+        if (error?.response?.data?.username) {
+            alert(error?.response ? error?.response?.data?.username : error)
+        } else if (error?.response?.data?.title || error?.response?.data?.description || error?.response?.data?.primaryAddress  ){
+            alert("title, description, primary address may not be blank")
+        } else {
+            // alert(error?.response ? error?.response?.data : error)
+            alert("invalid input")
+        }
+      
+   
+        // alert('not found')
         
         return null
     }

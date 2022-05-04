@@ -39,7 +39,7 @@ function App() {
       // checkLoginStatus()
       const loggedInUser = localStorage.getItem('user')
       const loggedInUserID = localStorage.getItem('userID')
-      console.log(loggedInUserID)
+      // console.log(loggedInUserID)
       if (loggedInUser && loggedInUserID){
         setUserName(loggedInUser)
         setUserID(loggedInUserID)

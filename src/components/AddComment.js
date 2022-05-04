@@ -19,12 +19,12 @@ function AddComment(props) {
             content: input,
             post: postID
         }
-        console.log(`data sent to comment on post ${postID}`, commentData)
+        // console.log(`data sent to comment on post ${postID}`, commentData)
 
         const data = await FavorightAPI.createComment(commentData)
 
         if (data) {
-            console.log("received data from comment created:", data)
+            // console.log("received data from comment created:", data)
             props.updateComments(data)
             document.getElementById('content').value = ''
         }

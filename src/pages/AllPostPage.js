@@ -74,10 +74,10 @@ function AllPostPage(props){
 
     const checkIsPaid = (post) => {
         if (post.is_paid) {
-            console.log('is paid')
+            // console.log('is paid')
             return "$$$"
         } else {
-            console.log('not paid')
+            // console.log('not paid')
             return  
         }
     }

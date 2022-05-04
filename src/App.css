@@ -54,7 +54,7 @@ img{
 
  background-image:linear-gradient(to right, rgb(84, 244, 244), rgb(16, 108, 151));
   display: flex;
- padding: 10px;
+ padding: 40px;
  align-items: center;
  justify-content: center;
  flex-direction: row;
@@ -62,6 +62,7 @@ img{
  margin: 100px;
  max-height:700px;
  overflow: auto;
+ 
 }
  
 
@@ -166,6 +167,7 @@ img{
 
 #favor-me-helped-page{
   height: 100vh;
+  overflow:auto;
   
 }
 
@@ -246,8 +248,8 @@ img{
  
  
   width: 100%;
-  background-image: linear-gradient(to right, rgb(119, 231, 231), rgb(26, 141, 195));
- margin-top: 50px;
+  background-image: linear-gradient(to right, rgb(119, 231, 231), rgb(73, 183, 234));
+ margin-top: 100px;
   text-align: center;
   height: 200px;
   padding: 20px;
@@ -322,6 +324,7 @@ img{
   border-radius: 5rem;
   padding: 30px;
   border: inset 5px;
+  overflow: auto;
   
   
  
@@ -333,6 +336,7 @@ img{
   width: 55%;
   background-color: rgb(255, 186, 186);
   padding: 30px;
+  overflow: auto;
 }
 
 
@@ -341,7 +345,8 @@ img{
 /* ========================================================*/
 /* my comment page */
 #my-comment-page{
-   height: 100vh;
+  height: 100vh;
+  overflow:auto;
 }
 #my-comment-page-comments{
   
@@ -357,6 +362,7 @@ img{
 /* comment detail page */
 
 #comment-detail-page{
+  padding: 50px;
    height: 100vh;
 }
 
@@ -389,5 +395,6 @@ img{
 
 /* ============================================================ */
 #edit-post-page{
-  height:750px
+  height:750px;
+  height: 100vh;
 }

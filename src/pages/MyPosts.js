@@ -23,10 +23,10 @@ function MyPosts(props){
             
             let foundMyPosts = data.filter(post => post.creator === Number(localStorage.getItem('userID')))
             
-            console.log("found my posts!!!", foundMyPosts)
+            // console.log("found my posts!!!", foundMyPosts)
             setMyPosts(foundMyPosts ? foundMyPosts : [])
         } else {
-            console.log("something went wrong when loading my posts !!!!!!!!!!!!!!")
+            // console.log("something went wrong when loading my posts !!!!!!!!!!!!!!")
         }
        
        
@@ -41,12 +41,12 @@ function MyPosts(props){
             if (data){
                 const updatedMyPosts = myPosts.filter(myPosts => myPosts.id !== postToBeDeleted.id)
                 setMyPosts(updatedMyPosts)
-                console.log('post deleted successfully!!!!!')
+                // console.log('post deleted successfully!!!!!')
             } else {
-                console.error("error occured on deleting my post!!!!!!")
+                // console.error("error occured on deleting my post!!!!!!")
             }
         } else {
-            console.log("this is not your post!!!!!!")
+            // console.log("this is not your post!!!!!!")
             alert("not your post")
             return null 
         }
@@ -54,10 +54,10 @@ function MyPosts(props){
     }
     const checkIsPaid = (post) => {
         if (post.is_paid) {
-            console.log('is paid')
+            // console.log('is paid')
             return "$$$"
         } else {
-            console.log('not paid')
+            // console.log('not paid')
             return 'not paid'
         }
     }

@@ -65,7 +65,8 @@ function CommentDetailPage(props) {
 
     return (
         <div id="comment-detail-page">
-            <h3>{currentComment && currentComment.content}</h3>  by: userID {currentComment && currentComment.creator}
+            <h5>Initial Comment:</h5>
+            <h3>  <br></br>{currentComment && currentComment.content}</h3>  by: userID {currentComment && currentComment.creator}
        
             
             <AddSubComment updateSubcomments = {updateSubcomments} />

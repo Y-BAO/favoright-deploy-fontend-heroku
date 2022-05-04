@@ -23,7 +23,7 @@ function ShowFavorMeHelpedComponent (props) {
             setFavorMeHelped(data ? data : [])
             
         } else {
-            console.log('you did not help any favors')
+            // console.log('you did not help any favors')
         }
     
     }
@@ -35,12 +35,12 @@ function ShowFavorMeHelpedComponent (props) {
             if (data){
                 const updatedFavorSolved = favorMeHelped.filter(favor => favor.id != favorToBeDeleted.id)
                 setFavorMeHelped(updatedFavorSolved)
-                console.log('favor I helped updated successfully!!!!!!!')
+                // console.log('favor I helped updated successfully!!!!!!!')
             } else {
-                console.log('failed to delete favor i helped')
+                // console.log('failed to delete favor i helped')
             }
          } else {
-             console.log('you did not helpe this favor')
+            //  console.log('you did not helpe this favor')
              alert('you did not help this')
              return null
          }
@@ -49,10 +49,10 @@ function ShowFavorMeHelpedComponent (props) {
 
     const checkIsPaid = (post) => {
         if (post.is_paid) {
-            console.log('is paid')
+            // console.log('is paid')
             return "$$$"
         } else {
-            console.log('not paid')
+            // console.log('not paid')
             return  
         }
     }
@@ -85,10 +85,16 @@ function ShowFavorMeHelpedComponent (props) {
                 )
             }
         }
-        return output
+       
        } else {
-           console.log('still loading favor I helped')
+        //    console.log('still loading favor I helped')
+        output.push(
+            <div key={null}>
+                <h3>You haven't git any favor yet</h3>
+            </div>
+        )
        }
+       return output
         
     }
 

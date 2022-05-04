@@ -25,9 +25,14 @@ function StoreNearBySearchComponent (props) {
        
         const data = await FavorightAPI.getYelp(inputParams)
         if (data) {
-            console.log("store nearby search!!!!!",data)
-            props.setYelpData(data ? data : null )
-            console.log("hello")
+            // console.log("store nearby search!!!!!",data.error.code)
+            if (data.error){
+                alert('invalid input')
+            } else {
+                props.setYelpData(data ? data : null )
+                console.log("search succeed")
+            }
+           
         } else {
             console.log('Yelp failed to load')
         }

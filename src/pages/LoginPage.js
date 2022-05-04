@@ -14,19 +14,19 @@ function LoginPage(props) {
 
     const handleLogin = async (event) => {
         event.preventDefault()
-        console.log(event.target.value)
+        // console.log(event.target.value)
         const loginData = {
             username: event.target.elements["username"].value,
             password: event.target.elements["password"].value,
         }
-
+       
     
 
         const data = await FavorightAPI.login(loginData)
         
 
         if (data){
-            console.log(data.token)
+            // console.log(data.token)
             props.setUserName(data.username)
             localStorage.setItem('user', loginData.username)
             localStorage.setItem('userID', data.userID)

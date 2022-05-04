@@ -14,14 +14,13 @@ function SignUpPage() {
             password: event.target.elements["password"].value,
         }
 
-        console.log("Sign Up info:", signUpData)
-
+        // console.log("Sign Up info:", signUpData)
         const data = await FavorightAPI.signUp(signUpData)
-        console.log(data)
+     
         if (data){
             
             navigate("/login")
-        }
+        }   
     } 
 
 

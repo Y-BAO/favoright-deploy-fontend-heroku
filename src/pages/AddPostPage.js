@@ -22,12 +22,12 @@ function AddPostPage (props) {
             
         }
 
-        console.log("Data sent to create post: ", postData)
+        // console.log("Data sent to create post: ", postData)
 
         const data = await FavorightAPI.createPost(postData)
 
         if (data){
-            console.log("received data from post created:", data)
+            // console.log("received data from post created:", data)
             navigate(`/all-posts/${data.id}`)
         }
        
@@ -48,11 +48,11 @@ function AddPostPage (props) {
     </Form.Select>
  
   <Form.Group className="mb-3" controlId="formBasicPassword">
-  <Form.Label>What do you need help with ?</Form.Label>
+  <Form.Label>(<strong>Required!</strong>) What do you need help with ?</Form.Label>
     <Form.Control name="title" placeholder = "title" />
-    <Form.Label>Describe your favor:</Form.Label>
+    <Form.Label>(<strong>Required!</strong>) Describe your favor:</Form.Label>
     <Form.Control as="textarea" name="description" placeholder="description"  cols='60' />
-    <Form.Label>  (<strong>Required!</strong>) street, city, state, zipcode (or a place) / </Form.Label>
+    <Form.Label>  (<strong>Required!</strong>) street, city, state, zipcode (or a place)  </Form.Label>
     <Form.Control   name="primaryAddress" placeholder="primaryAddress/ pickup / userAddress" />
     <Form.Label> (optional): street, city, state, zipcode (or a place)</Form.Label>
     <Form.Control  name="secondaryAddress" placeholder="secondaryAddress / dropoff" />

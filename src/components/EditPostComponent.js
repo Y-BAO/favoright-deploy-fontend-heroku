@@ -27,14 +27,14 @@ function EditPostComponent(props) {
         if (currentPostCreatorID == currentLoggedInUserID) {
             const data = FavorightAPI.editPostByID(postID,editedPostData)
             if (data) {
-                console.log("post updated successfully !!!!!!!!!")
+                // console.log("post updated successfully !!!!!!!!!")
                 navigate('/my-posts')
             } else {
-                console.log("post update failed !!!!!!!!!!!")
+                // console.log("post update failed !!!!!!!!!!!")
             }
 
         } else {
-            console.log("you are not allowed to edit this post!!!!!!!")
+            // console.log("you are not allowed to edit this post!!!!!!!")
         }
          
     }
@@ -70,11 +70,11 @@ function EditPostComponent(props) {
         <option id="other" value={3}>Other</option>
         </Form.Select>
         <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>What do you need help with ?</Form.Label>
+        <Form.Label>(<strong>Required!</strong>) What do you need help with ?</Form.Label>
             <Form.Control name="title" defaultValue={props.editingPost.title} />
-            <Form.Label>Describe your favor:</Form.Label>
+            <Form.Label>(<strong>Required!</strong>) Describe your favor:</Form.Label>
             <Form.Control name="description" as='textarea' defaultValue={props.editingPost.description}  />
-            <Form.Label>  street, city, state, zipcode (or a place)</Form.Label>
+            <Form.Label> (<strong>Required!</strong>) street, city, state, zipcode (or a place) </Form.Label>
             <Form.Control  name="primaryAddress" defaultValue={props.editingPost.primaryAddress} />
             <Form.Label> (optional): street, city, state, zipcode (or a place)</Form.Label>
             <Form.Control name="secondaryAddress" defaultValue={props.editingPost.secondaryAddress} />

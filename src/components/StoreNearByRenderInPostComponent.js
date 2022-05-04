@@ -17,7 +17,7 @@ function StoreNearByRenderInPostComponent (props) {
     //  api call to find store nearby in yelp 
     const loadYelpData = async () =>{
         if (props.currentPost){
-            console.log(props.currentPost, 'current post !!!!!!!!!!!!')
+            // console.log(props.currentPost, 'current post !!!!!!!!!!!!')
             const inputParams = {
                 location: props.currentPost.primaryAddress,
                 term: props.currentPost.title,
@@ -25,10 +25,10 @@ function StoreNearByRenderInPostComponent (props) {
             }
             const data = await FavorightAPI.getYelp(inputParams)
             if (data) {
-                console.log("store nearby search!!!!!",data)
+                // console.log("store nearby search!!!!!",data)
                 setYelpData(data ? data : null )
             } else {
-                console.log('Yelp failed to load')
+                // console.log('Yelp failed to load')
             }
         }
       
@@ -81,7 +81,7 @@ function StoreNearByRenderInPostComponent (props) {
             return output
         
         } else {
-            console.log("Waiting for user input!!!!!!!!")
+            // console.log("Waiting for user input!!!!!!!!")
         }
       
     }
@@ -91,7 +91,7 @@ function StoreNearByRenderInPostComponent (props) {
 
     return (
         <div  >
-             
+             <h3>Some related servies if applicable</h3>
             <Carousel variant="dark" > 
              {renderYelp()} 
              </Carousel>

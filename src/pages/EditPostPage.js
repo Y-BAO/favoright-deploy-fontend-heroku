@@ -18,17 +18,17 @@ function EditPostPage(props) {
         const data = await FavorightAPI.getPostByID(postID)
 
         if (data) {
-            console.log("found post to be edited!!!!!!!")
+            // console.log("found post to be edited!!!!!!!")
             setEditingPost(data ? data : [])
         } else {
-            console.log("something went wrong when locating post to be edited!!!")
+            // console.log("something went wrong when locating post to be edited!!!")
         }
     }
 
     const checkPermission = () => {
         if (editingPost.length !== 0){
-            console.log(typeof(props.userID))
-            console.log(typeof(editingPost.creator))
+            // console.log(typeof(props.userID))
+            // console.log(typeof(editingPost.creator))
             if (props.userID == editingPost.creator){
                 return (
                     <div>

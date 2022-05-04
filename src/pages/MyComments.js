@@ -16,10 +16,10 @@ function MyComments(props){
         const data = await FavorightAPI.getAllComments()
         if (data){
             let foundMyComments = data.filter(comment => comment.creator === Number(localStorage.getItem('userID')))
-            console.log("found comments!!!!!:", foundMyComments)
+            // console.log("found comments!!!!!:", foundMyComments)
             setMyComments(foundMyComments ? foundMyComments : [])
         } else {
-            console.log("something went wrong when loading my comments!!!!!!!!!")
+            // console.log("something went wrong when loading my comments!!!!!!!!!")
         }
 
     }
@@ -32,12 +32,12 @@ function MyComments(props){
             if (data){
                 const updatedMyComments = myComments.filter(myComments => myComments.id !== commentToBeDeleted.id )
                 setMyComments(updatedMyComments)
-                console.log('comment delete successfully !!!!!!!!!!!!')
+                // console.log('comment delete successfully !!!!!!!!!!!!')
             } else {
-                console.error("error occured on deleting my comments!!")
+                // console.error("error occured on deleting my comments!!")
             }
         } else {
-            console.log("this is not your comment!!!!!!!!")
+            // console.log("this is not your comment!!!!!!!!")
             alert('not your comment')
             return null
         }
@@ -47,7 +47,7 @@ function MyComments(props){
  
 
     const renderMyComments = () => {
-        console.log(myComments.post)
+        // console.log(myComments.post)
         return myComments.map((comment,index) => {
             return <div key={comment.id} id='my-comment-page-comments'>    
                 <p>CommentID: {comment.id}</p>
